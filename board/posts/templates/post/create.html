@@ -1,0 +1,26 @@
+<h1>Create Post</h1>
+<form action="" method="POST">
+  {% csrf_token %}
+  <label for="title">Title:</label>
+  <br />
+  <input type="text" placeholder="title" name="title" />
+
+  <br />
+  <br />
+
+  <label for="author">Author:</label>
+  <br />
+  <input type="text" placeholder="author" name="author" />
+
+  <br />
+  <br />
+
+  <label for="content">Content:</label>
+  <br />
+  <textarea name="content" placeholder="content"></textarea>
+
+  <br />
+  <br />
+
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,9 @@
+<h1>Post Lists</h1>
+<ul>
+  {% for post in posts %}
+  <li>
+    <a href="{% url 'posts:retrieve' pk=post.pk %}">{{ post }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'posts:create' %}"><button>글쓰기</button></a>

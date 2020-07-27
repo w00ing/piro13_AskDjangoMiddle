@@ -1,0 +1,10 @@
+<h1>Detail Post #{{ post.id }}</h1>
+
+<h2>{{ post.title }}</h2>
+<p>Content: {{ post.content }}</p>
+<p>Author: {{ post.author }}</p>
+<p>Created At {{ post.created_at }}</p>
+<p>Updated At {{ post.updated_at }}</p>
+<a href="{% url 'posts:update' pk=post.pk %}"><button>Edit</button></a>
+<a href="{% url 'posts:delete' pk=post.pk %}"><button>Delete</button></a>
+<a href="{% url 'posts:list' %}"><button>Back to the List</button></a>
